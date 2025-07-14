@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧪 EXERCÍCIO 1 — Calculadora de idade em dias </title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            color: white;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 EXERCÍCIO 1 — Calculadora de idade em dias</h1>
+
+    <script>
+    /* 
+    Peça ao usuário uma idade (em anos) e mostre no console:
+    Quantos dias de vida a pessoa já teve (aprox. 365 dias por ano).
+    Quantos meses isso representa.
+    Quantas semanas.    
+    */
+        let nome = prompt('Qual o seu nome?')
+        let idade = prompt('Quantos anos você tem?')
+
+        let dias = idade * 365;
+        let meses = idade * 12;
+        let semanas = idade * 52;
+        
+        alert(`Olá ${nome}! sua idade em dias: ${dias} dias, meses: ${meses} meses; semanas ${semanas} semanas.`)
+    </script>
+</body>
+</html>

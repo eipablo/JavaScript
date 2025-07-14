@@ -1,4 +1,4 @@
-// string, number, undefined (quando não inicializamos uma variável), null (quando não aponta pra local nenhum na memória), boolean, symbol.
+// string, number, undefined (quando não inicializamos uma variável), null (quando não aponta pra local nenhum na memória), boolean, symbol. 
 
 const string1 = "Pablo"; /*-----------*/
 const string2 = 'Pablo'; /*  String   */
