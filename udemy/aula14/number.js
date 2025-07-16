@@ -12,10 +12,13 @@ console.log(`${num1} (num1) é do tipo:`, typeof num1);
 
 */
 
+/*
+* Abreviando floats, verificando se um número é um inteiro, e verificando se um resultado é NaN.
 let dec1 = 2.6374868943289423;
 let num3 = 34
 let temp = 34 * '5' // ! Não é uma boa prática de programação fazer contas com strings diretamente, não devemos confiar 100% no Jscript, o correto seria converter antes de fazer a conta, ex: Number(Váriavel aqui!)
 
 console.log(`Abreviando a váriavel dec1: ${dec1.toFixed(2)}`);
 console.log(`Verificando se um número é um inteiro: ${Number.isInteger(dec1)}`);
-console.log(`Verificando se uma conta é um NaN: ${Number.isNaN(temp)}`);
+console.log(`Verificando se uma conta é um NaN: ${Number.isNaN(temp)}`); 
+*/
