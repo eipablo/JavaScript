@@ -1,0 +1,32 @@
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            text-align: center;
+            justify-content: center;
+            color: white;
+            background-color: black;
+        }
+        h1{
+            background-color: rgb(61, 59, 59);
+            border-radius: 10px 10px 0px 0px;
+            padding: 10px;
+            margin-bottom: 0px;
+            margin-top: 50px;
+            display: block;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        p{
+            margin-top: 0px;
+            background-color: rgb(92, 79, 79);
+            padding: 10px;
+            display: block;
+            margin-left: 100px;
+            margin-right: 100px;
+            font-size: 1.3em;
+        }
+        .radius{
+            border-radius: 0px 0px 10px 10px;
+        }
