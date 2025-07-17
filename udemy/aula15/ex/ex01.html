@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício com Numbers</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            text-align: center;
+            justify-content: center;
+            color: white;
+            background-color: black;
+        }
+        h1{
+            background-color: rgb(61, 59, 59);
+            border-radius: 10px 10px 0px 0px;
+            padding: 10px;
+            margin-bottom: 0px;
+            margin-top: 50px;
+            display: block;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        h2{
+            margin-top: 0px;
+            background-color: rgb(92, 79, 79);
+            padding: 10px;
+            display: block;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        .radius{
+            border-radius: 0px 0px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        let num1 = Number(window.prompt('Digite um número: '));
+        
+        if (Number.isNaN(num1) == true){
+            console.log(`o tipo do input é: NaN`)
+        }else{
+            console.log(`o tipo do input é: ${typeof num1}`);
+        };
+        
+
+        document.body.innerHTML += `<h1><strong>SEU NÚMERO É ${num1}</strong></h1>`;
+        document.body.innerHTML += `<h2>Raiz Quadrada: ${num1 ** 0.5}</h2> `;
+        document.body.innerHTML += `<h2>${num1} é inteiro? ${Number.isInteger(num1)}</h2>`;
+        document.body.innerHTML += `<h2>${num1} é NaN? ${Number.isNaN(num1)}</h2>`;
+        document.body.innerHTML += `<h2>Arredondado para baixo: ${Math.floor(num1)}</h2>`;
+        document.body.innerHTML += `<h2>Arredondado para cima: ${Math.ceil(num1)} </h2>`;
+        document.body.innerHTML += `<h2>Com duas casas decimais: ${num1.toFixed(2)} </h2>`;
+        document.body.innerHTML += `<h2 class="radius"> </h2>`;
+    </script>
+</body>
+</html>
