@@ -2,7 +2,7 @@
 
 function bomdia(nome){
     return `Bom dia, ${nome}!`;
-} //! esse é o jeito tradicional de teclarar uma função 
+} //! esse é o jeito tradicional de declarar uma função 
 
 const variavel = bomdia('Pablo'); //* a variavel vai receber o valor que a função retorna com return; sem o return ela ira valer undefined
 //! nem toda função precisa retornar um valor
