@@ -1,5 +1,5 @@
-/*
-* Convertendo Number para String, e modificando o tipo da váriavel
+
+//* Convertendo Number para String, e modificando o tipo da váriavel
 let num1 = 1; // Number
 let num2 = 2.5 // Number
 
@@ -10,7 +10,7 @@ console.log(`Agora vou converter a váriavel num1 (${num1}) para string`)
 num1 = num1.toString(); //! aqui estou convertendo o tipo da variável 
 console.log(`${num1} (num1) é do tipo:`, typeof num1); 
 
-*/
+
 
 /*
 * Abreviando floats, verificando se um número é um inteiro, e verificando se um resultado é NaN.
