@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --primary-color: rgb(38, 139, 170);
+    --primary-color-darker: rgb(9, 63, 80);
+    --primary-color-light: rgb(50, 181, 221);
+    --container-white: rgb(245, 245, 245);
+}
+
+/* Reset padrão */
+* {
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+h1{
+    text-align: center;
+    font-weight: 900;
+    margin: 14px;
+    color: var(--primary-color);
+}
+
+p {
+    text-align: justify;
+}
+
+.container{
+    max-width: 640px;
+    margin: 100px auto;
+    background-color: var(--container-white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 10px #00000026;
+    border: 2px solid rgb(0 135 155 / 39%);
+}
+
+form input, form label, form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input{
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus{
+    outline: 1px solid var(--primary-color);
+}
+
+form button{
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover{
+    background-color: var(--primary-color-darker);
+}
+
+form button:active{
+    background-color: var(--primary-color-light);
+}
+
+.list-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+.imc{
+    text-align: left;
+}
+
+.resultado{
+    text-align: right;
+}
+
+.list-title{
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.list-item{
+    font-size: 0.9em;
+}
+
+input{
+    margin-top: -10px;
+}
+
+.erro{
+    background-color: red;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.p-resultado{
+    color: white;
+    background-color: green;
+    font-weight: 900;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
