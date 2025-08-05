@@ -21,3 +21,7 @@ const listaX2 = [[1, 2, 3], [4, 5, 6], [7, 8, 9] ];
 console.log(listaX2[2][1]); //* sem desestruturação
 [, [,,seis]] = listaX2;
 console.log(seis);
+
+[lista1, lista2, lista3] = listaX2;
+console.log(lista1, lista2, lista3);
+
