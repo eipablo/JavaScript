@@ -19,3 +19,5 @@ console.log(n, sobrenome, idade);
 const { endereco: {bairro, rua: r = 'ajsdajs', numero}, endereco} = pessoa;
 console.log(endereco);
 console.log(bairro, r, numero);
+
+
