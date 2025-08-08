@@ -2,7 +2,7 @@
 
 
 function romanToInt(s){
-    //* passo 1, vou mapear os valores dos simbolos romanos
+    //* mapeando os valores dos simbolos romanos
     const valores = {
         I: 1,
         V: 5,
