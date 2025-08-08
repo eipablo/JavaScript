@@ -1,5 +1,6 @@
 //* utilizando o FOR
-
+//* modo tradicional quando vc sabe exatamente quantas vezes quer repetir algo
+//! for (inicialização; condição; incremento)
 
 // for(let i = 0; i <= 15; i++){
 //     const par = i % 2 === 0 ? 'é par' : 'é impar';
