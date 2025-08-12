@@ -8,6 +8,9 @@ for (let p of ps){
 }
 
 for (let h1 of h1s){
-    h1.style.backgroundColor = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`
+    h1.addEventListener('click', () => {
+        h1.style.backgroundColor = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`
+    })
+    
 }
 

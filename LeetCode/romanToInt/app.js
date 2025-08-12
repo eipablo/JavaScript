@@ -1,6 +1,4 @@
 //* Crie uma função JavaScript que receba uma string s representando um número romano e retorne o número inteiro equivalente.
-
-
 function romanToInt(s){
     //* mapeando os valores dos simbolos romanos
     const valores = {
