@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --dark-background: #121212;
+    --light-background: #F5F5F5;
+    --secundary: #00BFA6; /* verde água, bom para contrastar */
+    --text-primary: #333333;
+    --text-secundary: #666666; /* cinza médio para descrições */
+    --details: #FF5C5C; /* avisos ou botões importantes */
+    --primary: #6C63FF; /* roxo suave, chamativo mas não agressivo */
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--dark-background);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--light-background);
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.titulo{
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-primary);
+    text-align: center;
+    font-size: 2.5em;
+    padding: 20px;
+}
+
+.paragrafo{
+    color: var(--text-secundary);
+    text-align: center;
+}
+
+.destaque{
+    color: var(--primary);
+    font-weight: bolder;
+}
+
+.aqua{
+    color: var(--secundary);
+}
+
+.relogio{
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+    font-size: 2em;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+button {
+  padding: 12px 20px; 
+  border: 1px var(--text-secundary) solid; 
+  border-radius: 8px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: 0.3s;
+}
+
+
+.start:hover:not(:disabled) {
+    background-color: #1a8d1a; /* tom mais escuro do verde */
+    transform: scale(1.05); 
+}
+.pause:hover:not(:disabled) {
+    background-color: #d4d41a; /* amarelo mais forte */
+    transform: scale(1.05); 
+}
+.end:hover:not(:disabled) {
+    background-color: #c92020; /* vermelho mais forte */
+    transform: scale(1.05); 
+}
+
+
+.button-container{
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.start{
+    background-color: #21b521b5;
+}
+
+.pause{
+    background-color: #ffff2196;
+}
+
+.end{
+    background-color: #e32a2a96;
+}
+
+.relogio.pausado {
+    color: var(--details); /* vermelho da sua paleta */
+    font-weight: bold;
+}
+
+button:disabled {
+    color: #666;             
+    cursor: not-allowed;     
+    opacity: 0.7;           
+}
+
+.start:disabled {
+    background-color: #21b52150; /* mesma cor, mas mais clara */
+}
+.pause:disabled {
+    background-color: #ffff2190;
+}
+.end:disabled {
+    background-color: #e32a2a60;
+}
+
+button:disabled:hover{
+    transform: scale(1);
+}
+
+.footer{
+    color: var(--text-secundary);
+    text-align: center;
+    padding-top: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--details);
+  font-weight: bolder;
+  transition: transform 0.2s ease, color 0.2s ease;
+  display: inline-block;
+}
+
+a:hover {
+  color: #ff0000;
+  transform: translateY(-1px); /* sobe levemente */
+
+}

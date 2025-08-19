@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo</title>
+    <link rel="stylesheet" href="asset/css/style.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <h1>
+        TABELA IMC
+      </h1>
+      <div class="list-container">
+        <ul class="imc">
+          <li class="list-title"><b>IMC</b></li>
+          <li class="list-item">Menos do que 18,5</li>
+          <li class="list-item">Entre 18,5 e 24,9</li>
+          <li class="list-item">Entre 25 e 29,9</li>
+          <li class="list-item">Entre 30 e 34,9</li>
+          <li class="list-item">Entre 35 e 39,9</li>
+          <li class="list-item">Acima de 40</li>
+        </ul>
+        <ul class="resultado">
+          <li class="list-title"><b>RESULTADO</b></li>
+          <li class="list-item">Abaixo do peso</li>
+          <li class="list-item">Peso normal</li>
+          <li class="list-item">Sobrepeso</li>
+          <li class="list-item">Obesidade grau 1</li>
+          <li class="list-item">Obesidade grau 2</li>
+          <li class="list-item">Obesidade grau 3</li>
+        </ul>
+      </div>
+
+      <form action="" id="formulario">
+        <label for="peso">PESO</label>
+        <input type="text" id="input-peso" name="peso" placeholder="EX: 70.5"/>
+
+        <label for="altura">ALTURA</label>
+        <input type="text" id="input-altura" name="altura" placeholder="EX: 1.90"/>
+
+        <button>Calcular</button>
+      </form>
+
+      <div id="resultado"></div>
+    </section>
+
+    <script src="asset/js/main.js"></script>
+  </body>
+</html>
