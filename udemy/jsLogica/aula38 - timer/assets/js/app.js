@@ -1,4 +1,4 @@
-function relogio() {
+function clock() {
 
 //! função que retorna a hora formatada recebendo segundos
 function getHourFromSecond(segundos){
