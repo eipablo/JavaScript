@@ -1,3 +1,5 @@
+function relogio() {
+    
 //! função que retorna a hora formatada recebendo segundos
 function getHourFromSecond(segundos){
     const data = new Date(segundos * 1000); //? multiplicando por mil para virar segundos pois o new date recebe em milisegundos
@@ -56,3 +58,7 @@ zerar.addEventListener('click', function(e){
     iniciar.disabled = false;
     pausar.disabled = true;
 });
+}
+
+
+relogio(); 
