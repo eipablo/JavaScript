@@ -1,5 +1,5 @@
 function relogio() {
-    
+
 //! função que retorna a hora formatada recebendo segundos
 function getHourFromSecond(segundos){
     const data = new Date(segundos * 1000); //? multiplicando por mil para virar segundos pois o new date recebe em milisegundos
@@ -18,7 +18,7 @@ const zerar = document.querySelector('.end'); //? pegando o botão
 let segundos = 0; //? váriavel para iniciar os segundos
 
 let timer; //? váriavel timer para parar / iniciar o relógio
-//* ==========================================================================
+//* ==============================================================
 
 //! Função que iniciar o relógio acrescentando +1 na variável segundo a cada 1000 milésimos (1 segundo);
 function startClock(){ 
