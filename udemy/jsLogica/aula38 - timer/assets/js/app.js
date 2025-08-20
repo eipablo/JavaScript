@@ -37,6 +37,7 @@ iniciar.addEventListener('click', function (e){
     startClock();
     iniciar.disabled = true;
     pausar.disabled = false;
+    zerar.disabled = false;
 });
 
 //! escutador de evento (CLICK) no botão pausar
@@ -45,6 +46,7 @@ pausar.addEventListener('click', function(e){
     clearInterval(timer);
     iniciar.disabled = false;
     pausar.disabled = true;
+    zerar.disabled = false;
     relogio.classList.add('pausado')
 });
 
@@ -57,8 +59,10 @@ zerar.addEventListener('click', function(e){
     relogio.classList.remove('pausado');
     iniciar.disabled = false;
     pausar.disabled = true;
+    zerar.disabled = true;
 });
+
 }
 
 
-relogio(); 
+clock(); 
