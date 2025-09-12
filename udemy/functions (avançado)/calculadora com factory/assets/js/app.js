@@ -23,16 +23,16 @@ function criaCalculadora() {
         },
 
         apagaUm(){
-            this.display.value = this.display.value.slice(0, -1)
+            this.display.value = this.display.value.slice(0, -1) //* slice (inico, fim), ou seja, vai pegar a ultima letra digitada
         },
 
         realizaConta(){
             let conta = this.display.value;
 
             try {
-                conta = eval(conta)
+                conta = eval(conta) //* eval vai tentar fazer a conta com o que tem disponivel, mas não é mt confiável
 
-                if (!conta){
+                if (!conta){ //* verificando se a conta é válida
                     alert('conta inválida')
                     return;
                 }
@@ -48,7 +48,7 @@ function criaCalculadora() {
         cliqueBotoes(){ //? pegando evento de clique
             //? this -> calculadora
             document.addEventListener('click', e => {
-                //? a partir daqui o this é document
+                
                 const el = e.target;
 
                 if (el.classList.contains('btn-num')) {
