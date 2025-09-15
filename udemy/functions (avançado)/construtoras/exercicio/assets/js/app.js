@@ -1,4 +1,3 @@
-
 function Calculadora() {
     this.display = document.querySelector('.display');
 
@@ -9,7 +8,7 @@ function Calculadora() {
 
     this.pressEnter = () => {
         document.addEventListener('keypress', e => {
-            if (e.keyCode === 13){
+            if (e.key === "Enter"){
                 this.realizaConta();
             }
         });
