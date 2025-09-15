@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --dark-background: #121212;
+    --light-background: #F5F5F5;
+    --secundary: #00BFA6; /* verde água, bom para contrastar */
+    --text-primary: #333333;
+    --text-secundary: #666666; /* cinza médio para descrições */
+    --details: #FF5C5C; /* avisos ou botões importantes */
+  --primary: #6C63FF; /* roxo suave, chamativo mas não agressivo */
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    background-color: var(--dark-background);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a{
+  text-decoration: none;
+}
+
+.main-content{
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}
+
+.container {
+    background-color: var(--light-background);
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08), 0 1.5px 4px rgba(0,0,0,0.06);
+}
+
+.title{
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-primary);
+    text-align: center;
+    font-size: 2.5em;
+    padding: 20px;
+}
+
+p{
+    color: var(--text-secundary);
+    text-align: center;
+}
+
+.destaque{
+    color: var(--details);
+    font-weight: bolder;
+}
+
+/* ! calculadora  */
+.calc {
+  background-color: #EDEDED;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; 
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  border: 3px solid var(--dark-background);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 0px 2px #000;
+}
+
+/* ! input de texto calculadora */
+
+.display{
+  grid-column: span 4;
+  color: var(--text-primary);
+  font-size: 2.5em;
+  width: 100%;
+  text-align: right;
+  margin-bottom: 10px;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+}
+
+.display:active {
+  box-shadow: 2px 2px 15px var(--primary) inset;
+}
+
+.display:focus {
+  outline: none;
+  border-color: var(--secundary);
+  box-shadow: 0 0 0 2px rgba(0,191,166,0.15);
+}
+
+/* ! Botões calculadora */
+.btn {
+  width: 100%;
+  height: 50px;
+  display: block;
+  padding: 10px;
+
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: var(--secundary);
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 3px 3px 0px #000; 
+
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: var(--secundary);
+  border: 2px solid var(--secundary);
+  box-shadow: 5px 5px 0px var(--secundary);
+  font-size: 1.4em;
+}
+
+.btn:active {
+  background-color: #d6fff5;
+  box-shadow: none;
+  transform: translateY(4px);
+  font-size: 1.3em;
+}
+
+/* ! botão de igual */
+.btn-eq{
+  background-color: var(--details);
+}
+
+.btn-eq:hover {
+  background-color: #fff;
+  color: var(--details);
+  border: 2px solid var(--details);
+  box-shadow: 5px 5px 0px var(--details);
+}
+
+.btn-eq:active {
+  background-color: #fadfdf;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+/*! FOOTER */
+.footer{
+  margin-top: auto;
+  color: var(--text-secundary);
+  text-align: center;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-github {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  font-weight: bold;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: var(--primary);
+  color: #fff;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+}
+
+.btn-github:hover {
+  background-color: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  box-shadow: 5px 5px 0px var(--primary);
+}
+
+.btn-github:active {
+  background-color: #e6e4ff;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+.footer-p {
+  padding-bottom: 10px;
+  font-size: 0.9rem;
+  color: var(--text-secundary);
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 1.8em;
+  }
+
+  .btn {
+    font-size: 1em;
+    height: 45px;
+  }
+
+  .calc {
+    gap: 5px;
+  }
+}
+
