@@ -8,7 +8,7 @@ function Calculadora() {
 
     this.pressEnter = () => {
         document.addEventListener('keypress', e => {
-            if (e.key === "Enter"){
+            if (e.key === "Enter") {
                 this.realizaConta();
             }
         });
@@ -19,7 +19,7 @@ function Calculadora() {
     };
 
     this.apagaUm = () => {
-        this.display.value = this.display.value.slice(0, -1) 
+        this.display.value = this.display.value.slice(0, -1)
     };
 
     this.btnParaDisplay = (v) => {
@@ -32,34 +32,47 @@ function Calculadora() {
         try {
             conta = eval(conta);
 
-            if(!conta){
-                alert('Conta Inválida');
+            if (!conta) {
+                this.showAlert('Conta Inválida');
                 return;
             }
             this.display.value = String(conta);
         } catch (e) {
-            alert('Conta Inválida');
+            this.showAlert('Conta Inválida');
             return;
         }
+    };
+
+    this.showAlert = (message) => {
+        const alertBox = document.getElementById('custom-alert');
+        const alertMsg = document.getElementById('alert-message');
+        const alertClose = document.getElementById('alert-close');
+
+        alertMsg.innerText = message;
+        alertBox.classList.add('show');
+
+        alertClose.onclick = () => {
+            alertBox.classList.remove('show');
+        };
     };
 
     this.cliqueBotoes = () => {
         document.addEventListener('click', e => {
             const el = e.target;
 
-            if (el.classList.contains('btn-num')){
+            if (el.classList.contains('btn-num')) {
                 this.btnParaDisplay(el.innerText);
             }
 
-            if (el.classList.contains('btn-clear')){
+            if (el.classList.contains('btn-clear')) {
                 this.clearDisplay();
             }
 
-            if (el.classList.contains('btn-del')){
+            if (el.classList.contains('btn-del')) {
                 this.apagaUm();
             }
 
-            if (el.classList.contains('btn-eq')){
+            if (el.classList.contains('btn-eq')) {
                 this.realizaConta();
             }
 

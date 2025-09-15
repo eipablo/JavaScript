@@ -66,6 +66,41 @@ p{
     font-weight: bolder;
 }
 
+.custom-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: #FF5C5C;
+  color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  z-index: 999;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.custom-alert.show {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.custom-alert button {
+  margin-top: 15px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #FF5C5C;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.custom-alert button:hover {
+  background-color: #ffe5e5;
+}
+
 /* ! calculadora  */
 .calc {
   background-color: #EDEDED;
