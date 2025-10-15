@@ -8,6 +8,10 @@ const numerosFiltrados = numeros.filter(valor => valor > 10); //* quando a funç
 
 // console.log(numerosFiltrados);
 
+//? Retorne os numeros pares
+const numPares = numeros.filter(valor => valor % 2 === 0);
+console.log(numPares)
+
 
 //? Retorne as pessoas que tem o nome com 5 letras ou mais
 //? Retorne as pessoas com mais de 50 anos
@@ -33,4 +37,4 @@ const terminaComA = pessoas.filter(obj => {
     return obj['nome'].toLowerCase().endsWith('a');
 });
 
-console.log(terminaComA)
+// console.log(terminaComA)

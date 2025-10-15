@@ -36,5 +36,5 @@ const comIds = pessoas.map((obj, indice) => {
     return newObj;
 })
 
-console.log(comIds)
+// console.log(comIds)
 // console.log(pessoas)
